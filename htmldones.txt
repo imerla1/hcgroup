@@ -1,0 +1,11 @@
+about.html + 
+aml.html +
+
+contact.html + 
+dpa.html + 
+index.html + 
+login.html + 
+privacypolicy.html + 
+register-container.html 
+reigster.html
+termsofuse.html

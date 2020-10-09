@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="css/themify-icons.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 	<!--[if lt IE 9]>
@@ -27,28 +29,36 @@
 
 </head>
 <body>
+	<!-- Cookie Section -->
+  <!-- START Bootstrap-Cookie-Alert -->
+	
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
+	
 
 	<!-- Header section -->
 	<header class="header-section clearfix">
 		<div class="container-fluid">
-			<a href="index.html" class="site-logo">
-				<img src="img/logo.png" alt="">
-			</a>
-			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
-			<a href="" class="user"><i class="fa fa-user"></i></a>
-			<a href="login.html" class="site-btn">Sign In</a>
-			<nav class="main-menu">
-				<ul class="menu-list">
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
+		  <a href="index.html" class="site-logo">
+			<img src="img/logo.png" alt="" />
+		  </a>
+		  <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+		  <a href="login.html" class="user"><i class="fa fa-user"></i></a>
+		  <a href="register.html" class="user"><i>Register</i></a>
+		  <a href="login.html" class="site-btn">Sign In</a>
+		  <a href="register.html" class="site-btn meta" id="registration">Register Now</a>
+		  <nav class="main-menu">
+			<ul class="menu-list">
+			  <li><a href="aml.html">Security</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  
+			</ul>
+		  </nav>
 		</div>
-	</header>
+	  </header
 	<!-- Header section end -->
 
 
@@ -58,7 +68,7 @@
 		<div class="container">
 			<h2>Contact Us</h2>
 			<div class="site-beradcamb">
-				<a href="">Home</a>
+				<a href="index.html">Home</a>
 				<span><i class="fa fa-angle-right"></i> Contact us</span>
 			</div>
 		</div>
@@ -76,50 +86,43 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="check-form" type="text" placeholder="First Name*:">
+									<input class="check-form" type="text" placeholder="First Name*:" required>
 									<span><i class="ti-check"></i></span>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Last Name*:">
+									<input class="check-form" type="text" placeholder="Last Name*:" required>
 									<span><i class="ti-check"></i></span>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Email Adress*:">
+									<input class="check-form" type="email" placeholder="Email Adress*:" required>
 									<span><i class="ti-check"></i></span>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Phone Number*:">
+									<input class="check-form" type="tel" placeholder="Phone Number*:" required>
 									<span><i class="ti-check"></i></span>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea placeholder="Tell us about your question!"></textarea>
+									<textarea placeholder="Tell us about your question!" requirede></textarea>
 								</div>
-								<h5 class="mb-3">Way to Contacts<span>*</span>:</h5>
-								<div class="contact-type">
-									<label class="ct-label">Phone
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
-									<label class="ct-label">Email
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
-									<label class="ct-label">Other
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
+								
 								</div>
 
-								<button class="site-btn sb-gradients mt-4">Submit form</button>
+								<button class="site-btn sb-gradients mt-4" id="submit-contact" type="submit">Submit form</button>
+								
 							</div>
+							<br>
+							<div id="messagebox">
+
+							</div>
+							
 						</div>
 					</form>
 				</div>
@@ -153,75 +156,85 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<div class="row spad">
-				<div class="col-md-6 col-lg-3 footer-widget">
-					<img src="img/logo.png" class="mb-4" alt="">
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.</p>
-					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-					<h5 class="widget-title">Resources</h5>
-					<ul>
-						<li><a href="#">How to Buy Coin</a></li>
-						<li><a href="#">Coin Overview</a></li>
-						<li><a href="#">Blog News</a></li>
-						<li><a href="#">How to Sell Coin</a></li>
-						<li><a href="#">Purchase Theme</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-					<h5 class="widget-title">Quick Links</h5>
-					<ul>
-						<li><a href="#">Network Stats</a></li>
-						<li><a href="#">Block Explorers</a></li>
-						<li><a href="#">Governance</a></li>
-						<li><a href="#">Exchange Markets</a></li>
-						<li><a href="#">Get Theme</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
-					<h5 class="widget-title">Follow Us</h5>
-					<div class="social">
-						<a href="" class="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="" class="google"><i class="fa fa-google-plus"></i></a>
-						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
-						<a href="" class="twitter"><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
+		  <div class="row spad">
+			<div class="col-md-6 col-lg-3 footer-widget">
+			  <img src="img/logo.png" class="mb-4" alt="" />
+			  <p>
+				“Bitcoin is a techno tour de force.” – Bill Gates
+			  </p>
+			  <span>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;
+				<script>
+				  document.write(new Date().getFullYear());
+				</script>
+				All rights reserved 
+				<!-- <i class="fa fa-heart-o" aria-hidden="true"></i> by
+				<a href="https://colorlib.com" target="_blank">hc dev</a> -->
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 			</div>
+			<!-- <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+				<h5 class="widget-title">Resources</h5>
+				<ul>
+				  <li><a href="#">How to Buy Coin</a></li>
+				  <li><a href="#">Coin Overview</a></li>
+				  <li><a href="#">Blog News</a></li>
+				  <li><a href="#">How to Sell Coin</a></li>
+				  <li><a href="#">Purchase Theme</a></li>
+				</ul>
+			  </div> -->
+			<!-- <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+				<h5 class="widget-title">Quick Links</h5>
+				<ul>
+				  <li><a href="#">Network Stats</a></li>
+				  <li><a href="#">Block Explorers</a></li>
+				  <li><a href="#">Governance</a></li>
+				  <li><a href="#">Exchange Markets</a></li>
+				  <li><a href="#">Get Theme</a></li>
+				</ul>
+			  </div>
+			  <div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
+				<h5 class="widget-title">Follow Us</h5>
+				<div class="social">
+				  <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+				  <a href="" class="google"><i class="fa fa-google-plus"></i></a>
+				  <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+				  <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+				</div>
+			  </div>
+			</div> -->
 			<div class="footer-bottom">
-				<div class="row">
-					<div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
-						<a href=""><img src="img/appstore.png" alt="" class="mr-2"></a>
-						<a href=""><img src="img/playstore.png" alt=""></a>
-					</div>
-					<div class="col-lg-8 text-center text-lg-right">
-						<ul class="footer-nav">
-							<li><a href="">DPA</a></li>
-							<li><a href="">Terms of Use</a></li>
-							<li><a href="">Privacy Policy </a></li>
-							<li><a href="">support@company.com</a></li>
-							<li><a href="">(123) 456-7890</a></li>
-						</ul>
-					</div>
+			  <div class="row">
+				<div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
+				  <a href=""><img src="img/appstore.png" alt="" class="mr-2" /></a>
+				  <a href=""><img src="img/playstore.png" alt="" /></a>
 				</div>
+				<div class="col-lg-8 text-center text-lg-right">
+				  <ul class="footer-nav">
+					<li><a href="dpa.html">DPA</a></li>
+					<li><a href="termsofuse.html">Terms of Use</a></li>
+					<li><a href="privacypolicy.html">Privacy Policy </a></li>
+					<li><a href="">support@company.com</a></li>
+					<li><a href="">(123) 456-7890</a></li>
+				  </ul>
+				</div>
+			  </div>
 			</div>
-		</div>
-	</footer>
+		  </div>
+	  </footer>
 
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script src="js/submitcontact.js"></script>
 
 
 	<!-- load for map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 	<script src="js/map.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+	
 </body>
 </html>
