@@ -66,10 +66,11 @@ h2 {
 
 /* Using variable */
 .form-control.success input{
+    
     border-color: var(--success-color); 
 }
 
-.form-control.error input{
+.form-controls.error input{
     border-color: #e74c3c;
 }
 

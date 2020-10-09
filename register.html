@@ -5,11 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form validator</title>
     <link rel="stylesheet" href="css/new.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #4CAF50;
+      }
+      </style>
   </head>
   <body>
+    <!-- Cookie Section -->
+  <!-- START Bootstrap-Cookie-Alert -->
+  <div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a
+      href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+      I agree
+    </button>
+  </div>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="login.html">Sign In</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
     <div class="container">
       
-      <a href="./index.html">Return Home page</a>
       <form action="" id="form" class="form">
         <h2>Register With us</h2>
         <div class="form-control">
@@ -36,6 +89,7 @@
       </form>
     </div>
 
+    
     <script src="/js/register.js"></script>
   </body>
 </html>
