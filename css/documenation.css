@@ -28,3 +28,9 @@ ul li{
 .margin-bottom {
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 992px) {
+  .documenation-container {
+    width: 80%;
+  }
+}
